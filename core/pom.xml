@@ -23,10 +23,10 @@
     <parent>
         <artifactId>QuickShop-Era</artifactId>
         <groupId>com.github.bukkitcommons</groupId>
-        <version>5.0</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <name>qs-core</name>
+    <name>QuickShop-Era-Core</name>
     <artifactId>qs-core</artifactId>
 
     <dependencies>
