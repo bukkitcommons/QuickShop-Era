@@ -32,7 +32,7 @@ public final class LiveLocationalNone implements LiveLocational {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
+    public JsonObject asJsonValue() {
         return new JsonObject();
     }
 

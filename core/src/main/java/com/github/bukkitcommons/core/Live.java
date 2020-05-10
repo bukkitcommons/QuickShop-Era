@@ -18,19 +18,11 @@
 
 package com.github.bukkitcommons.core;
 
-import io.github.portlek.configs.jsonparser.JsonObject;
-import org.jetbrains.annotations.NotNull;
+import io.github.portlek.configs.jsonparser.JsonSerializable;
 
 /**
  * Live objects.
  */
-public interface Live {
-
-    /**
-     * Serializes the object
-     *
-     * @return the json of the object
-     */
-    @NotNull JsonObject serialize();
+public interface Live extends JsonSerializable {
 
 }

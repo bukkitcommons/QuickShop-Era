@@ -25,10 +25,14 @@
 package com.github.bukkitcommons.core.single;
 
 import com.github.bukkitcommons.core.Live;
+import io.github.portlek.configs.jsonparser.JsonObject;
 
 /**
  * A concrete building block of {@link Shop}.
  */
 public interface ShopBase extends Live {
+
+    @Override
+    JsonObject asJsonValue();
 
 }

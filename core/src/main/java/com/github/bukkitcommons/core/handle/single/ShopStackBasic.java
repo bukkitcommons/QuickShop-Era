@@ -44,7 +44,7 @@ public final class ShopStackBasic implements ShopStack {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
+    public JsonObject asJsonValue() {
         return new JsonObject();
     }
 

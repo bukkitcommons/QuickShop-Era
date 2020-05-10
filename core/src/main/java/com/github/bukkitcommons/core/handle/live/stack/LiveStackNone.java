@@ -34,7 +34,7 @@ public final class LiveStackNone implements LiveStack {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
+    public JsonObject asJsonValue() {
         return new JsonObject();
     }
 

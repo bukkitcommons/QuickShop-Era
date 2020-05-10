@@ -43,14 +43,14 @@ public final class ManagerBasic implements Manager {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
+    public JsonObject asJsonValue() {
         final JsonObject jsonObject = new JsonObject();
 
-        jsonObject.add("owner", this.owner.serialize());
+        jsonObject.add("owner", this.owner.asJsonValue());
 
         final JsonArray parent = new JsonArray();
 
-        this.coOwners.forEach(permissible -> parent.add(permissible.serialize()));
+        this.coOwners.forEach(permissible -> parent.add(permissible.asJsonValue()));
         jsonObject.add("co-owners", parent);
 
         return jsonObject;

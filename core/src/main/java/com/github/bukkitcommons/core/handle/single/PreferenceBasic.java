@@ -46,10 +46,10 @@ public final class PreferenceBasic implements Preference {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
+    public JsonObject asJsonValue() {
         final JsonObject jsonObject = new JsonObject();
 
-        jsonObject.add("manager", this.manager.serialize());
+        jsonObject.add("manager", this.manager.asJsonValue());
         jsonObject.add("display", this.display);
         jsonObject.add("enable", this.enable);
         jsonObject.add("unlimited", this.unlimited);

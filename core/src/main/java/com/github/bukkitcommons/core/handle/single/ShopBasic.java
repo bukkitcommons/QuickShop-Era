@@ -45,8 +45,8 @@ public final class ShopBasic implements Shop {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
-        return this.shopBase.serialize();
+    public JsonObject asJsonValue() {
+        return this.shopBase.asJsonValue();
     }
 
 }

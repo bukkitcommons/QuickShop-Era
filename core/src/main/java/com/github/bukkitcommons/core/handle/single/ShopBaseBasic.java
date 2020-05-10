@@ -46,12 +46,12 @@ public final class ShopBaseBasic implements ShopBase {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
+    public JsonObject asJsonValue() {
         final JsonObject jsonObject = new JsonObject();
 
-        jsonObject.add("preference", this.preference.serialize());
-        jsonObject.add("pattern", this.livePattern.serialize());
-        jsonObject.add("locational", this.liveLocational.serialize());
+        jsonObject.add("preference", this.preference.asJsonValue());
+        jsonObject.add("pattern", this.livePattern.asJsonValue());
+        jsonObject.add("locational", this.liveLocational.asJsonValue());
 
         return jsonObject;
     }

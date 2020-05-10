@@ -44,14 +44,14 @@ public final class PermissibleBasic implements Permissible {
 
     @NotNull
     @Override
-    public JsonObject serialize() {
+    public JsonObject asJsonValue() {
         final JsonObject jsonObject = new JsonObject();
 
         jsonObject.add("uuid", this.uuid.toString());
 
         final JsonArray permissions = new JsonArray();
 
-        this.perms.forEach(perm -> permissions.add(perm.serialize()));
+        this.perms.forEach(perm -> permissions.add(perm.asJsonValue()));
         jsonObject.add("permissions", permissions);
 
         return jsonObject;
