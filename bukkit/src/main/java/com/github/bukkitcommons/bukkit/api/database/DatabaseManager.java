@@ -25,8 +25,8 @@
 package com.github.bukkitcommons.bukkit.api.database;
 
 import com.github.bukkitcommons.bukkit.api.BukkitAddon;
-import com.github.bukkitcommons.bukkit.api.util.DebugUtils;
 import com.github.bukkitcommons.bukkit.api.util.Timer;
+import com.github.bukkitcommons.bukkit.api.util.Util;
 import com.github.bukkitcommons.bukkit.api.util.WarningSender;
 import com.github.bukkitcommons.core.database.Database;
 import com.github.bukkitcommons.core.database.DatabaseTask;
@@ -54,10 +54,10 @@ public final class DatabaseManager {
     @NotNull
     private final WarningSender warningSender;
 
+    private final boolean useQueue;
+
     @Nullable
     private BukkitTask task;
-
-    private final boolean useQueue;
 
     /**
      * Queued database manager. Use queue to solve run SQL make server lagg issue.
@@ -82,7 +82,7 @@ public final class DatabaseManager {
                     }
                 }.runTaskTimerAsynchronously(plgn, 1, 200);
         } catch (final IllegalPluginAccessException e) {
-            DebugUtils.debugLog("Plugin is disabled but trying create database task, move to Main Thread...");
+            Util.debugLog("Plugin is disabled but trying create database task, move to Main Thread...");
             plgn.getDatabaseManager().runTask();
         }
     }
@@ -137,7 +137,7 @@ public final class DatabaseManager {
             if (task == null) {
                 break;
             }
-            DebugUtils.debugLog("Executing the SQL task: " + task);
+            Util.debugLog("Executing the SQL task: " + task);
             task.run();
             final long tookTime = timer.endTimer();
             if (tookTime > 5000L) {
