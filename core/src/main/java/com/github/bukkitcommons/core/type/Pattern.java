@@ -26,6 +26,7 @@ package com.github.bukkitcommons.core.type;
 
 import com.github.bukkitcommons.core.Type;
 import com.github.bukkitcommons.core.live.LivePattern;
+import com.github.bukkitcommons.core.single.ShopBase;
 import org.jetbrains.annotations.NotNull;
 
 /**

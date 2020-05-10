@@ -29,6 +29,7 @@ public interface Type<T> {
     /**
      * Deserializes to the object
      *
+     * @param object the object to deserialize
      * @return the object from the json object.
      */
     @NotNull T deserialize(@NotNull JsonObject object);
