@@ -16,13 +16,13 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.github.bukkitcommmons;
+package com.github.bukkitcommons.bukkit;
 
+import com.github.bukkitcommons.bukkit.files.ConfigFile;
+import com.github.bukkitcommons.bukkit.files.LanguageFile;
 import org.jetbrains.annotations.NotNull;
-import com.github.bukkitcommmons.files.ConfigFile;
-import com.github.bukkitcommmons.files.LanguageFile;
 
-public final class QuickShopAPI {
+public final class QuickShopLoader {
 
     @NotNull
     public final ConfigFile configFile;
@@ -33,7 +33,7 @@ public final class QuickShopAPI {
     @NotNull
     private final QuickShop plugin;
 
-    public QuickShopAPI(@NotNull final QuickShop plugin) {
+    public QuickShopLoader(@NotNull final QuickShop plugin) {
         this.plugin = plugin;
         this.configFile = new ConfigFile();
         this.languageFile = new LanguageFile(this.configFile);

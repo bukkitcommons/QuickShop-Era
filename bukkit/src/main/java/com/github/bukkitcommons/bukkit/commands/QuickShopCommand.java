@@ -16,21 +16,21 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.github.bukkitcommmons.commands;
+package com.github.bukkitcommons.bukkit.commands;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.Default;
 import co.aikar.commands.annotation.Subcommand;
+import com.github.bukkitcommons.bukkit.QuickShop;
+import com.github.bukkitcommons.bukkit.QuickShopLoader;
 import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
-import com.github.bukkitcommmons.QuickShop;
-import com.github.bukkitcommmons.QuickShopAPI;
 
 @Subcommand("quickshop|qs")
 public final class QuickShopCommand extends BaseCommand {
 
     @NotNull
-    private final QuickShopAPI api = QuickShop.getAPI();
+    private final QuickShopLoader api = QuickShop.getAPI();
 
     @Default
     public void defaultCommand(final CommandSender sender) {

@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.github.bukkitcommmons.files;
+package com.github.bukkitcommons.bukkit.files;
 
 import io.github.portlek.configs.BukkitManaged;
 import io.github.portlek.configs.annotations.Config;

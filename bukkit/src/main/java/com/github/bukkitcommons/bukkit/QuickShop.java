@@ -16,19 +16,19 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.github.bukkitcommmons;
+package com.github.bukkitcommons.bukkit;
 
 import co.aikar.commands.BukkitCommandManager;
 import co.aikar.commands.ConditionFailedException;
+import com.github.bukkitcommons.bukkit.commands.QuickShopCommand;
 import java.util.Optional;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
-import com.github.bukkitcommmons.commands.QuickShopCommand;
 
 public final class QuickShop extends JavaPlugin {
 
-    private static QuickShopAPI api;
+    private static QuickShopLoader api;
 
     private static QuickShop instance;
 
@@ -49,13 +49,13 @@ public final class QuickShop extends JavaPlugin {
     }
 
     @NotNull
-    public static QuickShopAPI getAPI() {
+    public static QuickShopLoader getAPI() {
         return Optional.ofNullable(QuickShop.api).orElseThrow(() ->
             new IllegalStateException("You cannot be used QuickShop plugin before its start!")
         );
     }
 
-    private void setAPI(@NotNull final QuickShopAPI loader) {
+    private void setAPI(@NotNull final QuickShopLoader loader) {
         if (Optional.ofNullable(QuickShop.api).isPresent()) {
             throw new IllegalStateException("You can't use #setAPI method twice!");
         }
@@ -79,7 +79,7 @@ public final class QuickShop extends JavaPlugin {
     @Override
     public void onEnable() {
         final BukkitCommandManager manager = new BukkitCommandManager(this);
-        final QuickShopAPI loader = new QuickShopAPI(this);
+        final QuickShopLoader loader = new QuickShopLoader(this);
         this.setAPI(loader);
         this.getServer().getScheduler().runTask(this, () ->
             this.getServer().getScheduler().runTaskAsynchronously(this, () ->

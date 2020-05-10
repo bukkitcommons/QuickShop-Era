@@ -1,6 +1,6 @@
 name: QuickShop-Era
 version: ${project.version}
-main: com.github.bukkitcommmons.QuickShop
+main: com.github.bukkitcommmons.bukkit.QuickShop
 authors:
   - portlek
 api-version: '1.13'

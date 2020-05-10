@@ -49,11 +49,11 @@
                             <relocations>
                                 <relocation>
                                     <pattern>io.github.portlek.configs</pattern>
-                                    <shadedPattern>com.github.bukkitcommmons.files.api</shadedPattern>
+                                    <shadedPattern>com.github.bukkitcommons.bukkit.files.api</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>co.aikar.commands</pattern>
-                                    <shadedPattern>com.github.bukkitcommmons.commands.api</shadedPattern>
+                                    <shadedPattern>com.github.bukkitcommons.bukkit.commands.api</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -105,6 +105,10 @@
                 <exclusion>
                     <artifactId>snakeyaml</artifactId>
                     <groupId>org.yaml</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>gson</artifactId>
+                    <groupId>com.google.code.gson</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
