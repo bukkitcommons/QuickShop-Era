@@ -25,6 +25,7 @@
 package com.github.bukkitcommons.core.single;
 
 import com.github.bukkitcommons.core.Live;
+import com.github.bukkitcommons.core.live.LiveStack;
 
 /**
  * Collection of {@link LiveStack} that you can sell and buy actions.
