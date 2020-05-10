@@ -20,14 +20,15 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>QuickShop-Era</artifactId>
-        <groupId>org.maxgamer</groupId>
-        <version>5.0</version>
+        <groupId>com.github.bukkitcommons</groupId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <name>qs-bukkit</name>
-    <artifactId>qs-bukkit</artifactId>
+    <name>QuickShop-Era-Bukkit</name>
+    <artifactId>QuickShop-Era-Bukkit</artifactId>
 
     <build>
         <plugins>
@@ -81,14 +82,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.maxgamer</groupId>
-            <artifactId>qs-core</artifactId>
-            <version>5.0</version>
+            <groupId>com.github.bukkitcommons</groupId>
+            <artifactId>QuickShop-Era-Core</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.github.portlek</groupId>
             <artifactId>configs-bukkit</artifactId>
-            <version>2.6</version>
+            <version>2.8</version>
         </dependency>
         <dependency>
             <groupId>co.aikar</groupId>

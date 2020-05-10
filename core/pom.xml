@@ -27,7 +27,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <name>QuickShop-Era-Core</name>
-    <artifactId>qs-core</artifactId>
+    <artifactId>QuickShop-Era-Core</artifactId>
 
     <dependencies>
         <dependency>
