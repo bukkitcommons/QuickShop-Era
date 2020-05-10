@@ -36,9 +36,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/Ghost-chu/QuickShop-Reremake.git</connection>
-        <developerConnection>scm:git:ssh://github.com/Ghost-chu/QuickShop-Reremake.git</developerConnection>
-        <url>https://github.com/Ghost-chu/QuickShop-Reremake</url>
+        <connection>scm:git:git://github.com/bukkitcommons/QuickShop-Era.git</connection>
+        <developerConnection>scm:git:ssh://github.com/bukkitcommons/QuickShop-Era.git</developerConnection>
+        <url>https://github.com/bukkitcommons/QuickShop-Era</url>
     </scm>
 
     <properties>
