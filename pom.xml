@@ -5,7 +5,7 @@
     <groupId>com.github.bukkitcommons</groupId>
     <artifactId>QuickShop-Era</artifactId>
     <packaging>pom</packaging>
-    <version>5.0</version>
+    <version>1.0-SNAPSHOT</version>
     <name>QuickShop-Era</name>
     <description>A new generation Quick Shop plugin that written from the zero.</description>
 

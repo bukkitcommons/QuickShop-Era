@@ -22,12 +22,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>QuickShop-Era</artifactId>
-        <groupId>org.maxgamer</groupId>
+        <groupId>com.github.bukkitcommons</groupId>
         <version>5.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <name>qs-core</name>
     <artifactId>qs-core</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.github.portlek</groupId>
+            <artifactId>configs-core</artifactId>
+            <version>2.8</version>
+        </dependency>
+    </dependencies>
 
 </project>

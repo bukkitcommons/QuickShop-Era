@@ -1,6 +1,6 @@
 name: QuickShop-Era
 version: ${project.version}
-main: org.maxgamer.quickshop.QuickShop
+main: com.github.bukkitcommmons.QuickShop
 authors:
   - portlek
 api-version: '1.13'
